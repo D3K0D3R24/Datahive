@@ -1,0 +1,6 @@
+Tiempo inicio aplicación: 27/05/2023 12:00:00 a. m.
+SQL
+SELECT * FROM "Table02";
+EXITOSO
+NINGUNO
+Tiempo fin aplicación: 27/05/2023 03:45:20 p. m.

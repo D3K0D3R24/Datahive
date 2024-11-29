@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B06DBCDF-CABA-4862-AA31-941A948660F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Datahive</RootNamespace>
+    <AssemblyName>Datahive</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBLevel">
+      <HintPath>..\..\..\..\Act1.3 Conexion al SGBD Firebird\DBLevel.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\..\..\..\Act1.3 Conexion al SGBD Firebird\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 2.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 2.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="IniTools">
+      <HintPath>..\..\..\Datahive\Datahive\bin\Debug\IniTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\..\mysql.data\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClaseConexion.cs" />
+    <Compile Include="ClassBasesDeDatos.cs" />
+    <Compile Include="ClassGlobales.cs" />
+    <Compile Include="Form_Creación_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Creación_Usuarios.Designer.cs">
+      <DependentUpon>Form_Creación_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Create_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Create_user.Designer.cs">
+      <DependentUpon>Form_Create_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Permisos_Tabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Permisos_Tabla.Designer.cs">
+      <DependentUpon>Form_Permisos_Tabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List_users.Designer.cs">
+      <DependentUpon>List_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje_Eliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje_Eliminar.Designer.cs">
+      <DependentUpon>Mensaje_Eliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje_Eliminar_Tablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje_Eliminar_Tablas.Designer.cs">
+      <DependentUpon>Mensaje_Eliminar_Tablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje_eliminar_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje_eliminar_usuario.Designer.cs">
+      <DependentUpon>Mensaje_eliminar_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal\Control_Databases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal\Control_Databases.Designer.cs">
+      <DependentUpon>Control_Databases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crear Tablas\Form_Add_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear Tablas\Form_Add_Table.Designer.cs">
+      <DependentUpon>Form_Add_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup_Restore\Form_BackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup_Restore\Form_BackUp.Designer.cs">
+      <DependentUpon>Form_BackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup_Restore\Form_Backup_and_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup_Restore\Form_Backup_and_Restore.Designer.cs">
+      <DependentUpon>Form_Backup_and_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crear_Importar_DB\Form_Create_Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear_Importar_DB\Form_Create_Database.Designer.cs">
+      <DependentUpon>Form_Create_Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crear_Importar_DB\Form_Import_Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear_Importar_DB\Form_Import_Database.Designer.cs">
+      <DependentUpon>Form_Import_Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal\Form_Menu_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal\Form_Menu_Inicio.Designer.cs">
+      <DependentUpon>Form_Menu_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Renombrar_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Renombrar_DB.Designer.cs">
+      <DependentUpon>Form_Renombrar_DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migracion DB\Form_Migracion_MYSQL_FDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Migracion DB\Form_Migracion_MYSQL_FDB.Designer.cs">
+      <DependentUpon>Form_Migracion_MYSQL_FDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migracion DB\Form_Migración_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Migracion DB\Form_Migración_DB.Designer.cs">
+      <DependentUpon>Form_Migración_DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB\Form_Open_Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB\Form_Open_Database.Designer.cs">
+      <DependentUpon>Form_Open_Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB Tablas\Form_Open_Database_Info_Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB Tablas\Form_Open_Database_Info_Tables.Designer.cs">
+      <DependentUpon>Form_Open_Database_Info_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB Atributos\Form_Open_Atributos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB Atributos\Form_Open_Atributos.Designer.cs">
+      <DependentUpon>Form_Open_Atributos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB Tablas\Form_open_database_propiedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navegacion\Abrir DB Tablas\Form_open_database_propiedades.Designer.cs">
+      <DependentUpon>Form_open_database_propiedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup_Restore\Form_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup_Restore\Form_Restore.Designer.cs">
+      <DependentUpon>Form_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuColorTable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Creación_Usuarios.resx">
+      <DependentUpon>Form_Creación_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Create_user.resx">
+      <DependentUpon>Form_Create_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Permisos_Tabla.resx">
+      <DependentUpon>Form_Permisos_Tabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_users.resx">
+      <DependentUpon>List_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje_Eliminar.resx">
+      <DependentUpon>Mensaje_Eliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje_Eliminar_Tablas.resx">
+      <DependentUpon>Mensaje_Eliminar_Tablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje_eliminar_usuario.resx">
+      <DependentUpon>Mensaje_eliminar_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\Control_Databases.resx">
+      <DependentUpon>Control_Databases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crear Tablas\Form_Add_Table.resx">
+      <DependentUpon>Form_Add_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup_Restore\Form_BackUp.resx">
+      <DependentUpon>Form_BackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup_Restore\Form_Backup_and_Restore.resx">
+      <DependentUpon>Form_Backup_and_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crear_Importar_DB\Form_Create_Database.resx">
+      <DependentUpon>Form_Create_Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crear_Importar_DB\Form_Import_Database.resx">
+      <DependentUpon>Form_Import_Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\Form_Menu_Inicio.resx">
+      <DependentUpon>Form_Menu_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Renombrar_DB.resx">
+      <DependentUpon>Form_Renombrar_DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migracion DB\Form_Migracion_MYSQL_FDB.resx">
+      <DependentUpon>Form_Migracion_MYSQL_FDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migracion DB\Form_Migración_DB.resx">
+      <DependentUpon>Form_Migración_DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegacion\Abrir DB\Form_Open_Database.resx">
+      <DependentUpon>Form_Open_Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegacion\Abrir DB Tablas\Form_Open_Database_Info_Tables.resx">
+      <DependentUpon>Form_Open_Database_Info_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegacion\Abrir DB Atributos\Form_Open_Atributos.resx">
+      <DependentUpon>Form_Open_Atributos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegacion\Abrir DB Tablas\Form_open_database_propiedades.resx">
+      <DependentUpon>Form_open_database_propiedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup_Restore\Form_Restore.resx">
+      <DependentUpon>Form_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mensajes\" />
+    <Folder Include="Permisos Usuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\iconos\icons8-database-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\iconos\icon-más-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\iconos\icon-más-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos\iconos\icon-más.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

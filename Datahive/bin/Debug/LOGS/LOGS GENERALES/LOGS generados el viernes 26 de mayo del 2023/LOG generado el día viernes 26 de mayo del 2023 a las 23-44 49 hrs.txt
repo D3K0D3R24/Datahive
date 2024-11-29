@@ -1,0 +1,6 @@
+Tiempo inicio aplicación: 26/05/2023 12:00:00 a. m.
+SQL
+SELECT * FROM BASESDEDATOS ORDER BY IDBASE;
+EXITOSO
+NINGUNO
+Tiempo fin aplicación: 26/05/2023 11:44:49 p. m.
